@@ -34,10 +34,15 @@ body {
     width: 250px; /* 너비를 뷰포트 너비의 15%로 설정 */
 }
 
+
 .navright {
     display: flex; /* Flexbox로 설정 */
     gap: 50px; /* a 태그들 사이의 간격 조정 */
     align-items: center; /* a 태그들 세로 중앙 정렬 */
+}
+
+.hamburger {
+    display: none;
 }
 
 .navright a {
@@ -108,6 +113,7 @@ body {
     color: white;
     transform: translate( -50%, -50% );
     font-size: 75px;
+    white-space: nowrap;
 }
 
 .des_image_text {
@@ -117,6 +123,10 @@ body {
     color: white;
     transform: translate( -50%, 0% );
     font-size: 27px;
+}
+
+.des_image_text_m {
+    display: none;
 }
 
 .button-container {
@@ -220,8 +230,8 @@ footer {
 }
 
 .contact {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
 }
 
@@ -319,4 +329,122 @@ p {
 
 .container h1 {
     font-size: xx-large;
+}
+
+
+@media all and (max-width:479px) {
+    .navright {
+        display: none;
+    }
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+    }
+    
+    .line {
+        height: 4px;
+        background-color: #000000;
+        border-radius: 1px;
+    }
+    .main_image_text {
+        position: absolute;
+        top: 27.5vh;
+        left: 50%;
+        color: white;
+        transform: translate( -50%, -50% );
+        font-size: 60px;
+    }
+    .des_image_text_m {
+        display: block;
+        position: absolute;
+        top: calc(100px + 27.5vh);
+        left: 50%;
+        width: 70%;
+        color: white;
+        transform: translate( -50%, 0% );
+        font-size: 20px;
+    }
+    .des_image_text {
+        display: none;
+    }
+    
+    .button-container {
+        display: flex; /* 버튼을 가로로 배치 */
+        flex-direction: column; /* 세로 방향으로 배치 */
+        gap: 20px; /* 버튼 간 간격 */
+        position: relative; /* 상대 위치 지정 */
+        transform: translateY(-50%); /* 세로 중앙 정렬을 위한 변환 */
+        margin: 0 auto; /* 가로 중앙 정렬 */
+        margin-top: 150px;
+        width: fit-content; /* 내용에 맞춰 너비 조정 */
+        margin-bottom: -90px;
+    }
+
+
+
+    .midtitle {
+        margin-top: 100px;
+        width: 100%; /* 가로 너비를 100%로 설정 */
+        box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+    }
+    
+    .title {
+        display: inline-block; /* 제목을 인라인 블록으로 설정 */
+        border-bottom: 2px solid #000; /* 밑줄 설정 (두께: 2px, 색상: 검정) */
+        padding-bottom: 3px; /* 밑줄과 텍스트 간격 조정 */
+    }
+    
+    .project {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .project span{
+        color: #180F7E;
+    }
+    .description {
+        display: block;
+        margin-top: 5%;
+    }
+    .description img {
+        border-radius: 10px;
+        width: 100%;
+    }
+    .description span {
+        color: black;
+    }
+    .repim {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .repim img {
+        width: 80%;
+    }
+    .repim h1 {
+        font-size: 20pt;
+    }
+    .repim span {
+        font-size: 12.5pt;
+    }
+    .repim input {
+        background-color: rgb(24, 15, 126);
+        color: white;
+        border-radius: 5px;
+        width: 170px;
+        height: 50px;
+        font-size: 12.5pt;
+        margin-right: 20px;
+        cursor: pointer;
+        border: none;
+        margin-top: 50px;
+        transition: background-color 0.3s;
+    }
+    
+    .repim input:hover {
+        background-color: rgb(15, 10, 84);
+        transition: background-color 0.3s;
+    }
 }
