@@ -447,4 +447,26 @@ p {
         background-color: rgb(15, 10, 84);
         transition: background-color 0.3s;
     }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 100%; /* 메뉴를 화면 밖으로 숨김 */
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        color: white;
+        transition: right 0.3s ease;
+        padding: 20px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .menu li {
+        margin: 20px 0;
+    }
 }

@@ -14,7 +14,7 @@
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div>    
+        </div>
         <div class="navright">
             <div class="dropdown">
                 <a href="#">회사소개<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -43,6 +43,28 @@
             </div>
         </div>
     </div>
+    
+    <div class="menu" id="menu">
+        <ul>
+            <li>메뉴 1</li>
+            <li>메뉴 2</li>
+            <li>메뉴 3</li>
+            <li>메뉴 4</li>
+        </ul>
+    </div>
+
+    <script>
+        const hamburger = document.getElementsByClassName('hamburger')[0];
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            if (menu.style.right === '0px') {
+                menu.style.right = '100%'; // 메뉴 숨기기
+            } else {
+                menu.style.right = '0px'; // 메뉴 보이기
+            }
+        });
+    </script>
 
     <div class="banner">
         <img class="bannerimg" src="/static/img/banner.jpg">
