@@ -331,6 +331,13 @@ p {
     font-size: xx-large;
 }
 
+.ceo_m {
+    display: none;
+}
+
+.ceo_pc {
+    display: block;
+}
 
 @media all and (max-width:479px) {
     .navright {
@@ -468,5 +475,13 @@ p {
     
     .menu li {
         margin: 20px 0;
+    }
+
+    .ceo_m {
+        display: block;
+    }
+    
+    .ceo_pc {
+        display: none;
     }
 }

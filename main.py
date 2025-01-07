@@ -6,8 +6,8 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route('/')
-def companyinfo():
-    return render_template(".html")
+@app.route('/info/ceo')
+def ceo():
+    return render_template("info/ceo.html")
 
 app.run(port=80, debug=True)
