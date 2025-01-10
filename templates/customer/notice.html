@@ -10,7 +10,7 @@
 <body>
     <div class="topnav">
         <a href="/"><img src="/static/img/logo.png" alt="Logo" class="logo"></a>
-        <div class="hamburger">
+        <div class="hamburger" onclick="location.href='/menus';">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -55,9 +55,9 @@
         });
     </script>
 
-    <div class="banner">
-        <img class="bannerimg" style="height: 20vh;" src="/static/img/banner.jpg">
-        <h1 class="main_image_text" style="top: 17vh;font-size:55px;">공지사항</h1>
+    <div class="image-container">
+        <img src="/static/img/banner.jpg" alt="이미지">
+        <div class="text-overlay">공지사항</div>
     </div>
     <center style="margin-top: 40vh; margin-bottom: 40vh;"><h1>등록된 공지사항이 없습니다.</h1></center>
 </body>

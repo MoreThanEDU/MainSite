@@ -10,7 +10,7 @@
 <body>
     <div class="topnav">
         <a href="/"><img src="/static/img/logo.png" alt="Logo" class="logo"></a>
-        <div class="hamburger">
+        <div class="hamburger" onclick="location.href='/menus';">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -42,22 +42,9 @@
         </div>
     </div>
 
-    <script>
-        const hamburger = document.getElementsByClassName('hamburger')[0];
-        const menu = document.getElementById('menu');
-
-        hamburger.addEventListener('click', () => {
-            if (menu.style.right === '0px') {
-                menu.style.right = '100%'; // 메뉴 숨기기
-            } else {
-                menu.style.right = '0px'; // 메뉴 보이기
-            }
-        });
-    </script>
-
-    <div class="banner">
-        <img class="bannerimg" style="height: 20vh;" src="/static/img/banner.jpg">
-        <h1 class="main_image_text" style="top: 17vh;font-size:55px;">도입/견적문의</h1>
+    <div class="image-container">
+        <img src="/static/img/banner.jpg" alt="이미지">
+        <div class="text-overlay">프로모션</div>
     </div>
     <script>alert("프로모션 준비중입니다.");history.back();</script>
 </body>

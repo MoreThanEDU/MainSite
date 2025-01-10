@@ -10,7 +10,7 @@
 <body>
     <div class="topnav">
         <a href="/"><img src="/static/img/logo.png" alt="Logo" class="logo"></a>
-        <div class="hamburger">
+        <div class="hamburger" onclick="location.href='/menus';">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -41,19 +41,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const hamburger = document.getElementsByClassName('hamburger')[0];
-        const menu = document.getElementById('menu');
-
-        hamburger.addEventListener('click', () => {
-            if (menu.style.right === '0px') {
-                menu.style.right = '100%'; // 메뉴 숨기기
-            } else {
-                menu.style.right = '0px'; // 메뉴 보이기
-            }
-        });
-    </script>
 
     <div class="banner">
         <img class="bannerimg" src="/static/img/banner.jpg">

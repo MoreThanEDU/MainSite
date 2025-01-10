@@ -38,4 +38,8 @@ def qna():
 def inquiry():
     return render_template("customer/inquiry.html")
 
+@app.route('/menus')
+def menus():
+    return render_template("menus.html")
+
 app.run(port=80, debug=True)

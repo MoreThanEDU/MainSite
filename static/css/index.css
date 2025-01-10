@@ -339,6 +339,30 @@ p {
     display: block;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block; /* 이미지 크기에 맞게 컨테이너 크기 조정 */
+}
+
+.image-container img {
+    width: 100vw;
+    height: 20vh;
+    object-fit: cover;
+    filter: brightness(65%);
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* 텍스트 색상 */
+    font-size: 40px; /* 텍스트 크기 */
+    font-weight: bold;
+    text-align: center;
+}
+
 @media all and (max-width:479px) {
     .navright {
         display: none;
