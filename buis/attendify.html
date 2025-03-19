@@ -21,7 +21,7 @@
                 <div class="dropdown-content">
                     <a href="/info/ceo">대표소개</a>
                     <a href="/info/vision">비전 및 경영철학</a>
-                    <a href="/info/organization">조직도</a>
+                    <!--<a href="/info/organization">조직도</a>-->
                 </div>
             </div>
             <div class="dropdown">
@@ -42,11 +42,38 @@
         </div>
     </div>
 
+    <script>
+        const hamburger = document.getElementsByClassName('hamburger')[0];
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            if (menu.style.right === '0px') {
+                menu.style.right = '100%'; // 메뉴 숨기기
+            } else {
+                menu.style.right = '0px'; // 메뉴 보이기
+            }
+        });
+    </script>
+
     <div class="image-container">
         <img src="/static/img/banner.jpg" alt="이미지">
-        <div class="text-overlay">프로모션</div>
+        <div class="text-overlay">Attendify</div>
     </div>
-    <script>alert("프로모션 준비중입니다.");history.back();</script>
+    <div class="section" style="margin-top:10vh;margin-bottom:10vh;">
+        <div class="project">
+            <span>Service 1</span>
+            <h1>Attendify 어텐디파이</h1>
+            <div class="description">
+                <img src="/static/img/1.png">
+                <div class="repim">
+                    <center><img src="/static/img/attendify.png"></center>
+                    <h1>모두를 위한 출석체크 서비스, Attendify</h1>
+                    <span>Attendify는 학교(초.중.고 및 대학교), 학원, 영재교육원 등 출석체크가 필요한 모든 상황에 사용할 수 있는 온라인 출석체크 서비스입니다. 라이트 버전은 아무런 결제 없이 누구나 사용할 수 있으며, 프로 버전은 결제 후 좀 더 다양한 기능이 제공됩니다. 기존의 프로그램과는 웹 버전으로서 훨씬 편하고 간단하다는 차별성을 자랑합니다.</span>
+                    <center><a href="/contact/1" class="chat-button">더 알아보기</a></center>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
     <div class="info">
